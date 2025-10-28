@@ -77,12 +77,12 @@ You can customize daedalOS to include shortcuts to your homelab services:
 
 ### Service Shortcuts
 Example shortcuts you can add:
-- **Portfolio**: `https://chrislawrence.ca/portfolio`
-- **SchedShare**: `https://chrislawrence.ca/schedshare`
-- **CapitolScope**: `https://chrislawrence.ca/capitolscope`
-- **n8n**: `https://chrislawrence.ca/n8n`
-- **Portainer**: `https://chrislawrence.ca/docker`
-- **Grafana**: `https://chrislawrence.ca/metrics`
+- **Portfolio**: `https://portfolio.chrislawrence.ca`
+- **SchedShare**: `https://schedshare.chrislawrence.ca`
+- **CapitolScope**: `https://capitolscope.chrislawrence.ca`
+- **n8n**: `https://dev.chrislawrence.ca/n8n`
+- **Portainer**: `https://dev.chrislawrence.ca/docker`
+- **Grafana**: `https://dev.chrislawrence.ca/metrics`
 
 ## Monitoring
 
