@@ -15,9 +15,9 @@ daedalOS is a desktop environment in the browser that provides a personal "Opera
 ## Homelab Integration
 
 ### Port Configuration
-- **Direct Access**: `http://192.168.50.81:8158`
+- **Direct Access**: `http://192.168.50.128:8158`
 - **Public URL**: `https://chrislawrence.ca/os/`
-- **Organizr Tab**: `http://192.168.50.81:8158` (for iframe embedding)
+- **Organizr Tab**: `http://192.168.50.128:8158` (for iframe embedding)
 
 ### Network Integration
 - Connected to `homelab-web` network
@@ -44,7 +44,7 @@ docker compose -f docker-compose-homelab.yml up -d
 ### Health Check
 ```bash
 # Check if daedalOS is running
-curl -I http://192.168.50.81:8158
+curl -I http://192.168.50.128:8158
 
 # Check logs
 docker compose -f docker-compose-homelab.yml logs daedalos
@@ -92,7 +92,7 @@ Example shortcuts you can add:
 docker compose -f docker-compose-homelab.yml ps
 
 # Check health
-curl -f http://192.168.50.81:8150 || echo "Service down"
+curl -f http://192.168.50.128:8150 || echo "Service down"
 
 # View logs
 docker compose -f docker-compose-homelab.yml logs -f daedalos
@@ -125,7 +125,7 @@ docker compose -f docker-compose-homelab.yml restart daedalos
 curl -I https://chrislawrence.ca/os/
 
 # Check proxy port
-curl -I http://192.168.50.81:8158
+curl -I http://192.168.50.128:8158
 
 # Check Caddy logs
 docker compose -f /home/chris/github/hephaestus-homelab/proxy/docker-compose.yml logs caddy
@@ -134,10 +134,10 @@ docker compose -f /home/chris/github/hephaestus-homelab/proxy/docker-compose.yml
 #### Organizr Embedding Issues
 ```bash
 # Check iframe headers
-curl -I http://192.168.50.81:8158 | grep -i frame
+curl -I http://192.168.50.128:8158 | grep -i frame
 
 # Test embedding
-curl -I http://192.168.50.81:8158 | grep -i content-security
+curl -I http://192.168.50.128:8158 | grep -i content-security
 ```
 
 ## Development
